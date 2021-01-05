@@ -6,3 +6,8 @@ btn.addEventListener('click', () => {
   search.classList.toggle('active')
   input.focus()
 })
+
+/* 
+Tao trang thai css active
+dung cac medthod classList remove add toggle de tuy chon
+*/
