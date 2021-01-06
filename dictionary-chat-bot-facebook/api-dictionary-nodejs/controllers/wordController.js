@@ -1,0 +1,10 @@
+const Word = require('./../models/wordModel')
+const catchAsync = require('./../ultis/catchAsync')
+const factory = require('./handlerFactory')
+const AppError = require('./../ultis/appError')
+
+exports.getAllWords = factory.getAll(Word)
+exports.getWord = factory.getOne(Word)
+exports.createWord = factory.createOne(Word)
+exports.updateWord = factory.updateOne(Word)
+exports.deleteWord = factory.deleteOne(Word)

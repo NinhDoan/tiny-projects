@@ -1,9 +1,18 @@
 const express = require('express')
-const { route } = require('../app')
-const dicController = require('./../controllers/dicController')
+const wordController = require('./../controllers/wordController')
 
 const router = express.Router()
 
 router
   .route('/')
-  .get(dicController.getAlldic)
+  .get(wordController.getAllwords)
+  .post(wordController.createTour)
+
+router
+  .route('/:id')
+  .get(wordController.getWord)
+  .patch(wordController.updateWord)
+  .delete(wordController.deleteWord)
+
+router.route('/:word')
+  .get(wordController.findWord)
