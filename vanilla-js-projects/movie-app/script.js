@@ -11,17 +11,19 @@ const search = document.getElementById('search')
 // Get initial movies
 getMovies(API_URL)
 
+
 async function getMovies(url) {
   const res = await fetch(url)
   const data = await res.json()
 
   showMovies(data.results)
+
 }
 
 function showMovies(movies) {
   main.innerHTML = ''
 
-  movies.forEach((movie) => {
+  movies.map((movie) => {
     const { title, poster_path, vote_average, overview } = movie
 
     const movieEl = document.createElement('div')
@@ -41,6 +43,8 @@ function showMovies(movies) {
     main.appendChild(movieEl)
   })
 }
+
+
 
 function getClassByRate(vote) {
   if (vote >= 8) {
