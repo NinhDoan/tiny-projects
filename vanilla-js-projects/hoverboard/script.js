@@ -13,6 +13,17 @@ for (let i = 0; i < SQUARES; i++) {
   container.appendChild(square)
 }
 
+// for (const el of SQUARES) {
+//     const square = document.createElement('div')
+//     square.classList.add('square')
+
+//     square.addEventListener('mouseover', () => setColor(square))
+
+//     square.addEventListener('mouseout', () => removeColor(square))
+
+//     container.appendChild(square)
+// }
+
 function setColor(element) {
   const color = getRandomColor()
   element.style.background = color
