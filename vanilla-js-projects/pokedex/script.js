@@ -62,3 +62,17 @@ const createPokemonCard = (pokemon) => {
 }
 
 fetchPokemons()
+
+/*
+- Array.prototype.slice()
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+
+- Object.prototype.toString()
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString
+
+- String.prototype.padStart()
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
+
+- Object.keys()
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+*/
