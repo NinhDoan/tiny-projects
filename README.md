@@ -1,3 +1,3 @@
 # mini-project
 
-A repository for coding practice
+A repository for coding practice :))
