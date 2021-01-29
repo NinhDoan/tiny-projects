@@ -1,0 +1,13 @@
+.banner {
+  text-align: center;
+  background-color: #fff;
+}
+
+.button {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0.75%;
+  font-size: 1.4rem;
+}
