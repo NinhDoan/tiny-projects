@@ -1,5 +1,12 @@
 # preact-blog
 
+For learning config preact-cli with MDX
+
+
+Stack:
+- Preact
+- Preact-cli
+- MDX
 ## CLI Commands
 
 ``` bash
