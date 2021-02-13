@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 // import {data} from '../src/data'
 import './App.css'
 
@@ -77,42 +77,69 @@ import './App.css'
 //   )
 // }
 
+// function App()
+// {
+//   const [value, setValue] = useState(0)
+
+//   return (
+//     <>
+//       <h1>{value}</h1>
+//       <button
+//         onClick={() => {
+//           setValue(value + 1)
+//         }}
+//       >
+//         Increase
+//       </button>
+//       <button
+//         onClick={() => {
+//           setValue(0)
+//         }}
+//       >
+//         Reset
+//       </button>
+//       <button
+//         onClick={() => {
+//           if (value === 0) {
+//             setValue(0)
+//           }
+
+//           if (value !== 0) {
+//             setValue(value - 1)
+//           }
+//         }}
+//       >
+//         Decrease
+//       </button>
+//     </>
+//   )
+//  }
+
 function App()
 {
-  const [value, setValue] = useState(0)
+  const [size, setSize] = useState(window.innerWidth)
+  console.log(size)
+
+  const checkSize = () => [
+    setSize(window.innerWidth)
+  ]
+
+  useEffect(() =>
+  {
+    window.addEventListener('resize', checkSize)
+
+    return () =>
+    {
+      window.removeEventListener('resize', checkSize)
+    }
+  })
 
   return (
     <>
-      <h1>{value}</h1>
-      <button
-        onClick={() => {
-          setValue(value + 1)
-        }}
-      >
-        Increase
-      </button>
-      <button
-        onClick={() => {
-          setValue(0)
-        }}
-      >
-        Reset
-      </button>
-      <button
-        onClick={() => {
-          if (value === 0) {
-            setValue(0)
-          }
-
-          if (value !== 0) {
-            setValue(value - 1)
-          }
-        }}
-      >
-        Decrease
-      </button>
+      <h1>Window</h1>
+      <h2>{size }</h2>
     </>
   )
- }
+}
 
 export default App
