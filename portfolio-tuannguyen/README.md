@@ -1,5 +1,7 @@
 # portfolio-tuannguyen
 
+Live website: https://thichdev.com/
+[Preview on figma](https://www.figma.com/proto/I35hJWk2VrFaWb3Q039Aed/simple-portfolio-tuannguyen?node-id=1%3A2&scaling=min-zoom)
 ## CLI Commands
 
 ``` bash
@@ -18,5 +20,3 @@ npm run serve
 # run tests with jest and enzyme
 npm run test
 ```
-
-For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
