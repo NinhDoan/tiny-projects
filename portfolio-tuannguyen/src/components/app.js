@@ -1,12 +1,17 @@
 import { h } from 'preact';
 
+import Nav from '../components/Nav'
+import HeroSection from '../components/heroSection'
+import SkillsSection from '../components/skillsSection'
 
 const App = () =>
 {
 	return (
 		<>
-			<div>tuan</div>
-			</>
+			<Nav />
+			<HeroSection />
+			<SkillsSection />
+		</>
 	)
 }
 

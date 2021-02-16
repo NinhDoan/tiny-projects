@@ -1,6 +1,7 @@
 # portfolio-tuannguyen
 
 Live website: https://thichdev.com/
+
 [Preview on figma](https://www.figma.com/proto/I35hJWk2VrFaWb3Q039Aed/simple-portfolio-tuannguyen?node-id=1%3A2&scaling=min-zoom)
 ## CLI Commands
 
