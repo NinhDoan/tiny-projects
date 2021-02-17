@@ -9,7 +9,7 @@ const NavItem = () =>
         <ul>
           <li><a href=''>Bio</a></li>
           <li><a href=''>Skills</a></li>
-          <li><a href=''>Projects</a></li>
+          <li><a href='#project'>Projects</a></li>
           <li><a href=''>Contact</a></li>
         </ul>
       </div>

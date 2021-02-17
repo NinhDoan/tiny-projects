@@ -4,7 +4,7 @@ import style from './style.scss'
 const SkillsSection = () => {
   return (
     <>
-      <div class={style.skills}>
+      <div class={`style.skills margin-bottom-large`}>
         <div class={style.heading}>
           <h2 class={`heading-section`}>My skills</h2>
         </div>
