@@ -18,8 +18,6 @@ html {
 
 body {
     padding: 3.3rem 7rem 0 7rem;
-
-
 }
 
 a {
@@ -62,4 +60,19 @@ button {
 
 .margin-bottom-large {
     margin-bottom: 18em;
+}
+
+@media only screen and (max-width: 26.56em) {
+    body {
+        padding: 2rem 3rem 0 3rem;
+    }
+
+
+.margin-bottom-medium {
+    margin-bottom: 1rem;
+}
+
+.margin-bottom-large {
+    margin-bottom: 10em;
+}
 }
