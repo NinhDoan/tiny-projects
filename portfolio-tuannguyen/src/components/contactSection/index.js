@@ -25,12 +25,28 @@ const ContactSection = () => {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    <img src='../../assets/logo-linkedin.svg' alt='logo linked' />
+                    <img
+                      src='../../assets/logo-linkedin.svg'
+                      alt='logo linked'
+                    />
                   </a>
                 </li>
                 <li>
-                  <a href='https://github.com/nguyentuan1696/tiny-projects' target='_blank' rel='noreferrer'>
+                  <a
+                    href='https://github.com/nguyentuan1696/tiny-projects'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <img src='../../assets/logo-github.svg' alt='logo github' />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href='https://join.skype.com/invite/lohN5EIe7hVW'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <img src='../../assets/logo-skype.svg' alt='logo skype' />
                   </a>
                 </li>
               </ul>
