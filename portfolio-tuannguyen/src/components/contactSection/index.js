@@ -9,8 +9,29 @@ const ContactSection = () => {
           <h2 class={`heading-section`}>get in touch</h2>
         </div>
         <div class={style.main}>
-          <div class={style.content}>content</div>
-          <div class={style.info}>info</div>
+          <div class={style.content}>
+            Whether you’re trying to build your business for an exit are looking
+            for new ways to scale. I’m here to help you and your business grow.{' '}
+          </div>
+          <div class={style.info}>
+            <div class={style.info__title}>
+              <p>Follow me</p>
+            </div>
+            <div class={style.info__icons}>
+              <ul class={style.info__icons__list}>
+                <li>
+                  <a>
+                    <img src='../../assets/logo-linkedin.svg' />
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <img src='../../assets/logo-github.svg' />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </>
