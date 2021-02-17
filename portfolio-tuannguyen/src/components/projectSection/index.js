@@ -6,7 +6,7 @@ const ProjectsSection = () =>
   return (
     <>
       <div class={style.project}>
-        <div class={style.heading} id='project'>
+        <div class={style.heading} id='projects'>
           <h2 class={`heading-section`}>Projects</h2>
         </div>
         <div class={style.main}>

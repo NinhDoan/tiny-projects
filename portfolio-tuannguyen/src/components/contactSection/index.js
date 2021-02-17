@@ -5,7 +5,7 @@ const ContactSection = () => {
   return (
     <>
       <div class={style.contact}>
-        <div class={style.heading}>
+        <div class={style.heading} id='contact'>
           <h2 class={`heading-section`}>get in touch</h2>
         </div>
         <div class={style.main}>
@@ -20,12 +20,16 @@ const ContactSection = () => {
             <div class={style.info__icons}>
               <ul class={style.info__icons__list}>
                 <li>
-                  <a>
+                  <a
+                    href='https://www.linkedin.com/in/tuan-nguyen-763a2112b/'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <img src='../../assets/logo-linkedin.svg' />
                   </a>
                 </li>
                 <li>
-                  <a>
+                  <a href='https://github.com/nguyentuan1696/tiny-projects' target='_blank' rel='noreferrer'>
                     <img src='../../assets/logo-github.svg' />
                   </a>
                 </li>

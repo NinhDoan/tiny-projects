@@ -5,7 +5,7 @@ const SkillsSection = () => {
   return (
     <>
       <div class={`style.skills margin-bottom-large`}>
-        <div class={style.heading}>
+        <div class={style.heading} id='skills'>
           <h2 class={`heading-section`}>My skills</h2>
         </div>
         <div class={style.skills__content}>
