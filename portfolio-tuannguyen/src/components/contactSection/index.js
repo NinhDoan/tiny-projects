@@ -25,12 +25,12 @@ const ContactSection = () => {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    <img src='../../assets/logo-linkedin.svg' />
+                    <img src='../../assets/logo-linkedin.svg' alt='logo linked' />
                   </a>
                 </li>
                 <li>
                   <a href='https://github.com/nguyentuan1696/tiny-projects' target='_blank' rel='noreferrer'>
-                    <img src='../../assets/logo-github.svg' />
+                    <img src='../../assets/logo-github.svg' alt='logo github' />
                   </a>
                 </li>
               </ul>

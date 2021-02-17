@@ -11,7 +11,7 @@ const ProjectsSection = () =>
         </div>
         <div class={style.main}>
           <div class={style.thumbnail}>
-            <img src='../../assets/project-1.jpg' />
+            <img src='../../assets/project-1.jpg' alt='project thichtienganh.com' />
           </div>
           <div class={style.detail}>
             <h3 class={style.detail__heading}>thich tieng anh</h3>

@@ -2,7 +2,7 @@ import style from './style.scss'
 const Logo = () =>
 {
   return (
-    <a href=''>
+    <a href='/'>
       <span class={style.logo}>t</span>
     </a>
   )
