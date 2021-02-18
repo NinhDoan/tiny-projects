@@ -1,6 +1,24 @@
 import { h } from 'preact'
 import style from './style.scss'
 
+const data = [
+  {
+    name: 'logo-linked',
+    link: 'https://www.linkedin.com/in/tuan-nguyen-763a2112b/',
+    source: '../../assets/logo-linkedin.svg',
+  },
+  {
+    name: 'logo-github',
+    link: 'https://github.com/nguyentuan1696/tiny-projects',
+    source: '../../assets/logo-github.svg',
+  },
+  {
+    name: 'logo-skype',
+    link: 'https://join.skype.com/invite/lohN5EIe7hVW',
+    source: '../../assets/logo-skype.svg',
+  },
+]
+
 const ContactSection = () => {
   return (
     <>
@@ -19,36 +37,19 @@ const ContactSection = () => {
             </div>
             <div class={style.info__icons}>
               <ul class={style.info__icons__list}>
-                <li>
-                  <a
-                    href='https://www.linkedin.com/in/tuan-nguyen-763a2112b/'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <img
-                      src='../../assets/logo-linkedin.svg'
-                      alt='logo linked'
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='https://github.com/nguyentuan1696/tiny-projects'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <img src='../../assets/logo-github.svg' alt='logo github' />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='https://join.skype.com/invite/lohN5EIe7hVW'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <img src='../../assets/logo-skype.svg' alt='logo skype' />
-                  </a>
-                </li>
+                {data.map((d) => {
+                  return (
+                    <li key={d.name}>
+                      <a
+                        href={d.link}
+                        target='_blank'
+                        rel=' noopener noreferrer'
+                      >
+                        <img src={d.source} alt={d.name} />
+                      </a>
+                    </li>
+                  )
+                })}
               </ul>
             </div>
           </div>

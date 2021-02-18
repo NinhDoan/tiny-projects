@@ -1,8 +1,7 @@
 import { h } from 'preact'
 import style from './style.scss'
 
-const HeroSection = () =>
-{
+const HeroSection = () => {
   return (
     <>
       <main class={style.hero}>
@@ -20,7 +19,10 @@ const HeroSection = () =>
             customer-centric & blazing fast websites.
           </span>
         </p>
-        <a href='https://github.com/nguyentuan1696/tiny-projects/raw/main/portfolio-tuannguyen/download/demo-cv.pdf' download>
+        <a
+          href='https://github.com/nguyentuan1696/tiny-projects/raw/main/portfolio-tuannguyen/download/demo-cv.pdf'
+          download
+        >
           <button>Download my cv</button>
         </a>
       </main>
