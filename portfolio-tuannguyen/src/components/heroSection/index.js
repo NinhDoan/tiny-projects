@@ -5,7 +5,7 @@ const HeroSection = () =>
 {
   return (
     <>
-      <div class={style.hero}>
+      <main class={style.hero}>
         <h1 class={`style.hero__heading margin-bottom-medium`}>
           <span>I'm Tuan Nguyen</span>
           <span>A Developer</span>
@@ -20,8 +20,10 @@ const HeroSection = () =>
             customer-centric & blazing fast websites.
           </span>
         </p>
-        <button>download my cv</button>
-      </div>
+        <a href='https://github.com/nguyentuan1696/tiny-projects/raw/main/portfolio-tuannguyen/download/demo-cv.pdf' download>
+          <button>Download my cv</button>
+        </a>
+      </main>
     </>
   )
 }
