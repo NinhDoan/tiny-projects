@@ -5,8 +5,7 @@ const data = [
   {
     name: 'thich tieng anh',
     year: '2016 - Present',
-    description:
-      'Website thichtienganh.com – a website sharing free documents, high-quality articles for helping people learn English.',
+    description: 'Website thichtienganh.com – a website sharing free documents, high-quality articles for helping people learn English.',
     stack: 'Wordpress, HTML, CSS',
     link: 'https://thichtienganh.com/',
     source: '../../assets/project-1.jpg',
