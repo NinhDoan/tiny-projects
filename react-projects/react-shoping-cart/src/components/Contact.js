@@ -2,7 +2,34 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Contact = () => {
-  return <h4>contact section</h4>
+  return (
+    <Wrapper>
+      <div className='section-center'>
+        <h3>Join Our Newsletter and get 20% off</h3>
+        <div className='content'>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <form
+            className='contact-form'
+            action='https://formspree.io/f/xaylgenj'
+            method='POST'
+          >
+            <input
+              type='email'
+              className='form-input'
+              placeholder='enter email'
+              name='_replyto'
+            ></input>
+            <button type='submit' className='submit-btn' value='Send'>
+              subcribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </Wrapper>
+  )
 }
 const Wrapper = styled.section`
   padding: 5rem 0;
