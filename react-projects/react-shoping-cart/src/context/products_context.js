@@ -15,28 +15,44 @@ import {
 
 const initialState = {
   isSidebaropen: false,
+  products_loading: false,
+  products_error: false,
+  products: [],
+  featured_products: [],
 }
 
 const ProductsContext = React.createContext()
 
-export const ProductsProvider = ({ children }) =>
-{
+export const ProductsProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
-  const openSidebar = () =>
-  {
-    dispatch({type: SIDEBAR_OPEN})
+  const openSidebar = () => {
+    dispatch({ type: SIDEBAR_OPEN })
   }
 
   const closeSidebar = () => {
     dispatch({ type: SIDEBAR_CLOSE })
-  }  
-  useEffect(() =>
-  {
-    openSidebar()
+  }
+  // useEffect(() => {
+  //   openSidebar()
+  // }, [])
+
+  const fetchProducts = async (url) => {
+    dispatch({ type: GET_PRODUCTS_BEGIN })
+    try {
+      const responsive = await axios.get(url)
+      const products = responsive.data
+      dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products })
+    } catch (error) {
+      dispatch({type: GET_PRODUCTS_ERROR})
+    }
+  }
+
+  useEffect(() => {
+    fetchProducts(url)
   }, [])
-  
+
   return (
-    <ProductsContext.Provider value={{...state, openSidebar, closeSidebar}}>
+    <ProductsContext.Provider value={{ ...state, openSidebar, closeSidebar }}>
       {children}
     </ProductsContext.Provider>
   )
