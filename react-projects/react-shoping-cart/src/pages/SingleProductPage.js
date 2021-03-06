@@ -14,7 +14,9 @@ import {
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-const SingleProductPage = () => {
+const SingleProductPage = () =>
+{
+  console.log(useParams)
   return <h4>single product page</h4>
 }
 
