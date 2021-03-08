@@ -8,6 +8,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Remove default padding */
@@ -38,7 +39,6 @@ dd {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -83,7 +83,6 @@ select {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
   }
 }
 

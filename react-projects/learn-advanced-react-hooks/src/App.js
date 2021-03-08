@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useReducer } from 'react'
 // import {data} from '../src/data'
 import './App.css'
 
@@ -115,31 +115,97 @@ import './App.css'
 //   )
 //  }
 
-function App()
+// function App()
+// {
+//   const [size, setSize] = useState(window.innerWidth)
+//   console.log(size)
+
+//   const checkSize = () => [
+//     setSize(window.innerWidth)
+//   ]
+
+//   useEffect(() =>
+//   {
+//     window.addEventListener('resize', checkSize)
+
+//     return () =>
+//     {
+//       window.removeEventListener('resize', checkSize)
+//     }
+//   })
+
+//   return (
+//     <>
+//       <h1>Window</h1>
+//       <h2>{size }</h2>
+//     </>
+//   )
+// }
+
+// const initialState = {
+//   count: 0
+// }
+
+// const reducer = (state, action) =>
+// {
+//   if (action.type === 'decrement') {
+//     return {count: state.count - 1}
+//   }
+
+//   if (action.type === 'increment') {
+//     return {count: state.count + 1}
+//   }
+// }
+
+
+// const App = () =>
+// {
+//   const [state, dispatch] = useReducer(reducer, initialState)
+
+//   return (
+//     <>
+//       Count: {state.count}
+       
+//       <button onClick={() => dispatch({ type: 'decrement' })}> - </button>
+//       <button onClick={() => dispatch({ type: 'increment' })}> +</button>
+//     </>
+//   )
+// }
+
+
+const initialState = {
+  count: 0
+}
+
+const reducer = (state, action) =>
 {
-  const [size, setSize] = useState(window.innerWidth)
-  console.log(size)
+  if (action.type === 'increment') {
+    return {count: state.count + 1}
+  }
 
-  const checkSize = () => [
-    setSize(window.innerWidth)
-  ]
+  if (action.type === 'decrement') {
+    return {count: state.count - 1}
+  }
 
-  useEffect(() =>
-  {
-    window.addEventListener('resize', checkSize)
+  if (action.type === 'reset') {
+    return {count: state.count = 0}
+  }
+}
 
-    return () =>
-    {
-      window.removeEventListener('resize', checkSize)
-    }
-  })
+const App = () =>
+{
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   return (
     <>
-      <h1>Window</h1>
-      <h2>{size }</h2>
+      Count: {state.count}
+       
+      <button onClick={() => { dispatch({ type: 'increment' }) }}> +</button>
+      <button onClick={() => { dispatch({ type: 'decrement' }) }}>-</button>
+      <button onClick={() => {dispatch({ type: 'reset' })}}>Reset</button>
     </>
   )
 }
+
 
 export default App

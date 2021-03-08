@@ -3,8 +3,8 @@ import style from './style.scss'
 
 const data = [
   {
-    name: 'thich tieng anh',
-    year: '2016 - Present',
+    name: 'English Document',
+    year: '2016 - 2020',
     description: 'Website thichtienganh.com – a website sharing free documents, high-quality articles for helping people learn English.',
     stack: 'Wordpress, HTML, CSS',
     link: 'https://thichtienganh.com/',
