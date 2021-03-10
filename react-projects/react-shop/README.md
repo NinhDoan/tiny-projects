@@ -1,2 +1,10 @@
-## Notes
+# React Shop
+
+## Stack 
+
+
+# Note 
+
+# Diagram
+
 
