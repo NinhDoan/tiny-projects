@@ -12,7 +12,6 @@ const Sidebar = () =>
 {
   const {iSidebarOpen, closeSidebar} = useProductsContext()
 
-  const isOpen = true
   return (
     <>
       <SidebarContainer>

@@ -9,14 +9,16 @@ import {
   GET_SINGLE_PRODUCT_ERROR,
 } from '../actions'
 
-const products_reducer = (state, action) => {
+const products_reducer = (state, action) =>
+{
+  // console.log(state)
   if (action.type === SIDEBAR_OPEN) {
     return { ...state, isSidebarOpen: true }
   }
   if (action.type === SIDEBAR_CLOSE) {
     return { ...state, isSidebarOpen: false }
   }
-
+  
   throw new Error(`No Matching "${action.type}" - action type`)
 }
 
