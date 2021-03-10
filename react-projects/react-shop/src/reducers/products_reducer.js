@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {
   SIDEBAR_OPEN,
   SIDEBAR_CLOSE,

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import logo from '../assets/logo.svg'
 import { Link } from 'react-router-dom'
@@ -10,14 +11,14 @@ import { useUserContext } from '../context/user_context'
 
 const Sidebar = () =>
 {
-  const {iSidebarOpen, closeSidebar} = useProductsContext()
+  const {isSidebarOpen, closeSidebar} = useProductsContext()
 
   return (
     <>
       <SidebarContainer>
         <aside
           // Trick to hide/show sidebar
-          className={`${iSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
+          className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
         >
           <div className='sidebar-header'>
             <img src={logo} className='logo' alt='comfySloth'></img>
