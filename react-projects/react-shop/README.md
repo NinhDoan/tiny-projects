@@ -2,6 +2,7 @@
 Live: https://react-shop-gold.vercel.app/
 ## Stack 
 - React
+- Auth0
 - Vercel
 
 ## Research
