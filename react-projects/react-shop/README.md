@@ -9,7 +9,7 @@
 
 User Stories
 
-![diagram 1](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![diagram 1](https://raw.githubusercontent.com/nguyentuan1696/tiny-projects/main/react-projects/react-shop/diagram/linh-tinh-Page-13.png)
 
 
 
