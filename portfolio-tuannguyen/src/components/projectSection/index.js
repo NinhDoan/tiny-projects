@@ -5,10 +5,19 @@ const data = [
   {
     name: 'English Document',
     year: '2016 - 2020',
-    description: 'Website thichtienganh.com – a website sharing free documents, high-quality articles for helping people learn English.',
+    description:
+      'Website thichtienganh.com – a website sharing free documents, high-quality articles for helping people learn English.',
     stack: 'Wordpress, HTML, CSS',
     link: 'https://thichtienganh.com/',
     source: '../../assets/project-1.jpg',
+  },
+  {
+    name: 'React Shop',
+    year: '2021',
+    description: 'A project built for learning React',
+    link:
+      'https://github.com/nguyentuan1696/tiny-projects/tree/main/react-projects/react-shop',
+    source: '../../assets/project-2.png',
   },
 ]
 
