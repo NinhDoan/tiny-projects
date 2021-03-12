@@ -24,7 +24,11 @@ const SingleProductPage = () => {
     single_product: product,
     fetchSingleProduct
   } = useProductsContext()
-  console.log(id)
+ 
+  useEffect(() =>
+  {
+    fetchSingleProduct(`${url}${id}`)
+  }, [id])
   if (loading) {
     return <Loading />
   }

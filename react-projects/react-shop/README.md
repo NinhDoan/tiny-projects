@@ -1,7 +1,12 @@
 # React Shop
+
 Live: https://react-shop-gold.vercel.app/
-## Stack 
-- React
+
+## Stack
+
+- React: hooks, reducer pattern, context
+- Styled components
+- Axios
 - Auth0
 - Vercel
 
@@ -15,11 +20,19 @@ Featured
 
 ![diagram 1](https://raw.githubusercontent.com/nguyentuan1696/tiny-projects/main/react-projects/react-shop/diagram/linh-tinh-Page-14.png)
 
+## Note
 
-## Note 
 Using this react version to fix Hot Reloading
+
 ```
 "react": "^16.13.1",
 "react-dom": "^16.13.1",
 "react-scripts": "3.4.3",
+```
+
+Tricky in App.js line 35
+Fix Invalid hook call 
+```
+          <Route path='/products/:id' children={<SingleProduct />}></Route>
+
 ```
