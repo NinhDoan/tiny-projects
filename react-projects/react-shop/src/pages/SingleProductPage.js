@@ -18,23 +18,34 @@ import { Link } from 'react-router-dom'
 
 const SingleProductPage = () => {
   const { id } = useParams()
+  const history = useHistory()
+  // console.log(id)
   const {
     single_product_loading: loading,
     single_product_error: error,
     single_product: product,
-    fetchSingleProduct
+    fetchSingleProduct,
   } = useProductsContext()
- 
+
   useEffect(() =>
   {
-    fetchSingleProduct(`${url}${id}`)
+    if (error) {
+      setTimeout(() =>
+      {
+        history.push('/')
+      }, 3000)
+    }
+  }, [error])
+
+  useEffect(() => {
+    fetchSingleProduct(`s${url}${id}`)
   }, [id])
   if (loading) {
     return <Loading />
   }
   if (error) {
-     return <Error />
-   }
+    return <Error />
+  }
   return <h4>single product page</h4>
 }
 
