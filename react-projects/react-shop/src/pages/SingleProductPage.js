@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import { useProductsContext } from '../context/products_context'
@@ -15,6 +17,20 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const SingleProductPage = () => {
+  const { id } = useParams()
+  const {
+    single_product_loading: loading,
+    single_product_error: error,
+    single_product: product,
+    fetchSingleProduct
+  } = useProductsContext()
+  console.log(id)
+  if (loading) {
+    return <Loading />
+  }
+  if (error) {
+     return <Error />
+   }
   return <h4>single product page</h4>
 }
 

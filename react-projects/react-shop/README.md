@@ -17,4 +17,9 @@ Featured
 
 
 ## Note 
-
+Using this react version to fix Hot Reloading
+```
+"react": "^16.13.1",
+"react-dom": "^16.13.1",
+"react-scripts": "3.4.3",
+```

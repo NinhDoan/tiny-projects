@@ -72,6 +72,7 @@ export const ProductsProvider = ({ children }) => {
         ...state,
         openSidebar,
         closeSidebar,
+        fetchSingleProduct
       }}
     >
       {children}
@@ -79,6 +80,7 @@ export const ProductsProvider = ({ children }) => {
   )
 }
 // make sure use
+// This allow us using context everywhere
 export const useProductsContext = () => {
   return useContext(ProductsContext)
 }
