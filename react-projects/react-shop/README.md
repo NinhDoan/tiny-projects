@@ -33,6 +33,27 @@ Using this react version to fix Hot Reloading
 Tricky in App.js line 35
 Fix Invalid hook call 
 ```
-          <Route path='/products/:id' children={<SingleProduct />}></Route>
+<Route path='/products/:id' children={<SingleProduct />}></Route>
 
+```
+
+Logic display stars reviews
+
+```
+// @param: stars is number of star review
+  const tempStars = Array.from({ length: 5 }, (_, index) => {
+    // index 0 - 4
+    const number = index + 0.5
+    return (
+      <span key={index}>
+        {stars >= index + 1 ? (
+          <BsStarFill />
+        ) : stars >= number ? (
+          <BsStarHalf />
+        ) : (
+          <BsStar />
+        )}
+      </span>
+    )
+  })
 ```

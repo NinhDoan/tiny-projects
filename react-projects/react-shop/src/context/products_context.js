@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import axios from 'axios'
 import React, { useContext, useEffect, useReducer } from 'react'
 import reducer from '../reducers/products_reducer'
@@ -30,7 +29,6 @@ const ProductsContext = React.createContext()
 export const ProductsProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
-  // 1. Sidebar
   const openSidebar = () => {
     dispatch({ type: SIDEBAR_OPEN })
   }
@@ -39,7 +37,6 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: SIDEBAR_CLOSE })
   }
 
-  // 2. Fetch API
   const fetchProducts = async (url) => {
     dispatch({ type: GET_PRODUCTS_BEGIN })
     try {
@@ -56,7 +53,7 @@ export const ProductsProvider = ({ children }) => {
     try {
       const response = await axios.get(url)
       const singleProduct = response.data
-      dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS })
+      dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: singleProduct })
     } catch (error) {
       dispatch({ type: GET_SINGLE_PRODUCT_ERROR })
     }
@@ -68,19 +65,13 @@ export const ProductsProvider = ({ children }) => {
 
   return (
     <ProductsContext.Provider
-      value={{
-        ...state,
-        openSidebar,
-        closeSidebar,
-        fetchSingleProduct
-      }}
+      value={{ ...state, openSidebar, closeSidebar, fetchSingleProduct }}
     >
       {children}
     </ProductsContext.Provider>
   )
 }
-// make sure use
-// This allow us using context everywhere
+// make sure to use
 export const useProductsContext = () => {
   return useContext(ProductsContext)
 }

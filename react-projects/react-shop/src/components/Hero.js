@@ -17,7 +17,7 @@ const Hero = () => {
           minima assumenda voluptate facere quam animi totam recusandae officiis
           sit!
         </p>
-        <Link to='/product' className='btn hero-btn'>
+        <Link to='/products' className='btn hero-btn'>
           shop now
         </Link>
       </article>
