@@ -94,6 +94,8 @@ React hook context api, replace redux
 Get more: 
 - https://www.sitepoint.com/replace-redux-react-hooks-context-api/
 
+![diagram 5](https://raw.githubusercontent.com/nguyentuan1696/tiny-projects/main/react-projects/react-shop/diagram/linh-tinh-Page-15.png)
+
 ## Note
 
 Using this react version to fix Hot Reloading
