@@ -22,7 +22,7 @@ Featured
 
 
 ## Structure
-
+In ```src/``` folder
 ```
 ├── actions.js
 ├── App.js
