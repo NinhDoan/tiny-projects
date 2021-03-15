@@ -20,6 +20,74 @@ Featured
 
 ![diagram 1](https://raw.githubusercontent.com/nguyentuan1696/tiny-projects/main/react-projects/react-shop/diagram/linh-tinh-Page-14.png)
 
+
+## Structure
+
+```
+├── actions.js
+├── App.js
+├── assets
+│   ├── hero-bcg-2.jpeg
+│   ├── hero-bcg.jpeg
+│   └── logo.svg
+├── components
+│   ├── AddToCart.js
+│   ├── AmountButtons.js
+│   ├── CarContent.js
+│   ├── CartButtons.js
+│   ├── CartColumns.js
+│   ├── CartItem.js
+│   ├── CartTotals.js
+│   ├── Contact.js
+│   ├── Error.js
+│   ├── FeaturedProducts.js
+│   ├── Filters.js
+│   ├── Footer.js
+│   ├── GridView.js
+│   ├── Hero.js
+│   ├── index.js
+│   ├── ListView.js
+│   ├── Loading.js
+│   ├── Navbar.js
+│   ├── PageHero.js
+│   ├── ProductImages.js
+│   ├── Product.js
+│   ├── ProductList.js
+│   ├── Services.js
+│   ├── Sidebar.js
+│   ├── Sort.js
+│   ├── Stars.js
+│   └── StripeCheckout.js
+├── context
+│   ├── cart_context.js
+│   ├── filter_context.js
+│   ├── products_context.js
+│   └── user_context.js
+├── index.css
+├── index.js
+├── pages
+│   ├── AboutPage.js
+│   ├── AuthWrapper.js
+│   ├── CartPage.js
+│   ├── CheckoutPage.js
+│   ├── ErrorPage.js
+│   ├── HomePage.js
+│   ├── index.js
+│   ├── PrivateRoute.js
+│   ├── ProductsPage.js
+│   └── SingleProductPage.js
+├── reducers
+│   ├── cart_reducer.js
+│   ├── filter_reducer.js
+│   └── products_reducer.js
+└── utils
+    ├── constants.js
+    └── helpers.js
+
+6 directories, 53 files
+
+```
+
 ## Docs
 React hook context api, replace redux
 
