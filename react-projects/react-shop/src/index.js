@@ -8,8 +8,11 @@ import { CartProvider } from './context/cart_context'
 import { UserProvider } from './context/user_context'
 import { Auth0Provider } from '@auth0/auth0-react'
 
-const domain = process.env.REACT_APP_AUTH0_DOMAIN
-const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID
+// const domain = process.env.REACT_APP_AUTH0_DOMAIN
+// const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID
+
+const domain = 'dev-puh4n0hg.us.auth0.com'
+const clientId = 'AwmuV98q6vQ3x33h5JyifCNvVe4uG2ax'
 
 ReactDOM.render(
   <Auth0Provider
