@@ -1,6 +1,8 @@
 import { h } from 'preact'
 import style from './style.scss'
 
+const urlCV = 'https://git.io/JqhbD'
+
 const HeroSection = () => {
   return (
     <>
@@ -19,7 +21,7 @@ const HeroSection = () => {
             customer-centric & blazing fast websites.
           </span>
         </p>
-        <a href='https://git.io/JqhbD' download>
+        <a href={urlCV} download>
           <button>Download my cv</button>
         </a>
       </main>
