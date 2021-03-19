@@ -35,4 +35,13 @@
   }
 }
 
+ @media only screen and (max-width: 61.25em) {
+   .main {
+
+    &__label {
+      font-size: 1.5rem;
+    }
+   }
+ } // 980px / 16px = 61.25em
+
 

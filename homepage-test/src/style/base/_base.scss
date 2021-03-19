@@ -7,3 +7,10 @@ body {
 body, html {
   height: 100%;
 }
+
+ @media only screen and (max-width: 61.25em) {
+   body {
+     font-size: 50%;
+   }
+ } // 980px / 16px = 61.25em
+

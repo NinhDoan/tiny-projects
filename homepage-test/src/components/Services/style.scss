@@ -4,6 +4,12 @@
   justify-content: space-between;
   margin-bottom: 3rem;
 
+   @media only screen and (max-width: 61.25em) {
+   flex-flow: column-reverse wrap;
+   padding: 0 1rem;
+ } // 980px / 16px = 61.25em
+
+
   &__left {
     &_form {
       justify-content: flex-start;
@@ -12,6 +18,12 @@
         text-transform: uppercase;
         margin-bottom: 0.2rem;
         font-size: 0.75rem;
+
+        @media only screen and (max-width: 61.25em) {
+          body {
+            font-size: 0.5rem;
+          }
+        } // 980px / 16px = 61.25em
       }
 
       &_input {
@@ -31,7 +43,7 @@
           text-transform: uppercase;
           background-color: var(--color-black);
           color: var(--color-white);
-          outline:0;
+          outline: 0;
           border: 0;
         }
       }
@@ -41,7 +53,7 @@
           margin: 0;
         }
 
-        &_items  img {
+        &_items img {
           width: 2rem;
           height: 2rem;
         }
@@ -51,7 +63,7 @@
 
   &__right {
     &_title {
-      font-size: 1rem ;
+      font-size: 1rem;
       text-transform: uppercase;
       font-family: var(--font-family-title);
     }
@@ -67,6 +79,4 @@
 
 .icons {
   margin-right: 10px;
-
-
 }

@@ -22,3 +22,13 @@
 
   }
 }
+
+ @media only screen and (max-width: 61.25em) {
+   .header {
+
+    &__title {
+      font-size: 3rem;
+    }
+   }
+ } // 980px / 16px = 61.25em
+

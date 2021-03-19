@@ -1,6 +1,10 @@
 .main {
   padding-top: 1.5rem;
   margin-bottom: 3rem;
+
+         @media only screen and (max-width: 61.25em) {
+   padding: 0rem 1rem;
+ } // 98
   &__title {
     text-align: center;
     text-transform: uppercase;
@@ -10,6 +14,8 @@
     margin-bottom: 1.5rem;
     transition: 0.5s ease-in-out;
     cursor: pointer;
+
+    
   }
 
   &__title:hover {
@@ -22,6 +28,12 @@ letter-spacing: 0.2px;
     width: 100%;
     margin: 0;
 
+       @media only screen and (max-width: 61.25em) {
+   flex-flow: column wrap;
+  
+ } // 980px / 16px = 61.25em
+
+
   }
 
   &__items {
@@ -30,6 +42,9 @@ letter-spacing: 0.2px;
     overflow: hidden;
     aspect-ratio: 1 / 1;
 
+   @media only screen and (max-width: 61.25em) {
+   width: 100%;
+ } // 980px / 16px = 61.25em
 
   }
 
