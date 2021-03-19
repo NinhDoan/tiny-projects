@@ -1,9 +1,9 @@
 .navigation {
 position: absolute;
-top: 17rem;
-left: 5rem;
+top: 10rem;
+left: 3rem;
 
-font-size: 1.5rem;
+font-size: 1rem;
 text-transform: uppercase;
 letter-spacing: 0.5rem;
 
@@ -12,7 +12,7 @@ list-style: none;
 }
 
 &__items:not(:last-child) {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 }

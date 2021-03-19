@@ -9,9 +9,12 @@ const Main = () => {
         <ul class={style.main__list}>
           {config.mainSection.map((photo) =>
           {
-            return <li class={style.main__items}>
-              <img class={style.main__photo} src={photo.src} />
-            </li>
+            return (
+              <li class={style.main__items}>
+                <img class={style.main__photo} src={photo.src} />
+                <p class={style.main__label}>{photo.label}</p>
+              </li>
+            ) 
           })}
 
         </ul>

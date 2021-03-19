@@ -13,8 +13,8 @@ export const config = {
     { label: 'sandals', link: '#' },
   ],
   mainSection: [
-    { src: '../../assets/photos/sub-photo-1.png', label: 'main-photo-1' },
-    { src: '../../assets/photos/sub-photo-2.png', label: 'main-photo-2' },
+    { src: '../../assets/photos/sub-photo-1.png', label: 'happypoints' },
+    { src: '../../assets/photos/sub-photo-2.png', label: 'hamsa \n technologies' },
   ],
   customerCare: [
     { label: 'ordering & payment', link: '#' },

@@ -10,12 +10,28 @@
     // background: red;
     overflow: hidden;
      aspect-ratio: 1 / 1;
+     position: relative;
 
   }
 
   &__photo {
     height: 100%;
     width: 100%;
+
+  }
+
+  &__label {
+    text-align: center;
+        position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: var(--z-index-overlay);
+    color: var(--color-white);
+    font-family: var(--font-family-title);
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 1px;
   }
 }
 
