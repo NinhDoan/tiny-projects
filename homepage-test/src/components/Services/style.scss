@@ -1,0 +1,72 @@
+.services {
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+
+  &__left {
+    &_form {
+      justify-content: flex-start;
+      &_title {
+        font-family: var(--font-family-title);
+        text-transform: uppercase;
+        margin-bottom: 0.2rem;
+        font-size: 0.75rem;
+      }
+
+      &_input {
+        display: flex;
+        margin: 0;
+        margin-bottom: 0.5rem;
+
+        input {
+          outline: 1px solid var(--color-black);
+          width: 20rem;
+          height: 1.5rem;
+          margin-right: 0.3rem;
+        }
+
+        button {
+          font-family: var(--font-family-title);
+          text-transform: uppercase;
+          background-color: var(--color-black);
+          color: var(--color-white);
+          outline:0;
+          border: 0;
+        }
+      }
+      &_social {
+        display: flex;
+        &_list {
+          margin: 0;
+        }
+
+        &_items  img {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+
+  &__right {
+    &_title {
+      font-size: 1rem ;
+      text-transform: uppercase;
+      font-family: var(--font-family-title);
+    }
+
+    &_links {
+      list-style-type: none;
+      font-size: 0.75rem;
+      font-weight: var(--font-weight-bold);
+      text-transform: capitalize;
+    }
+  }
+}
+
+.icons {
+  margin-right: 10px;
+
+
+}

@@ -30,6 +30,7 @@ export const config = {
     { src: '../../assets/photos/gallery-photo-4.png', label: 'anh-4' },
     { src: '../../assets/photos/gallery-photo-5.png', label: 'anh-4' },
   ],
+  titleServices: 'tag your photos with #HAPPYPOINTS and #HAMSA TECHNOLOGIES',
   socialIcons: [
     { src: '#', label: 'facebook', link: '#' },
     { src: '#', label: 'twitter', link: '#' },

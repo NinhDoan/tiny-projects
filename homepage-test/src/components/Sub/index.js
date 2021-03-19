@@ -8,7 +8,7 @@ const Sub = () =>
   return (
     <>
       <div class={style.main}>
-        <h2 class={style.main__title}>tag your photos with #HAPPYPOINTS and #HAMSA TECHNOLOGIES</h2>
+        <h2 class={style.main__title}>{config.titleServices}</h2>
         <ul class={style.main__list}>
           {config.services.map((photo) => {
             return (
