@@ -1,4 +1,9 @@
 
 body {
+  font-size: 62.5%;
   font-family: var(--font-family-base);
+}
+
+body, html {
+  height: 100%;
 }

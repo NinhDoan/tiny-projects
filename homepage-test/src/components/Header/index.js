@@ -1,9 +1,18 @@
 import { h } from 'preact'
+import style from './style.scss'
+import { config } from '../../../site.config'
 
-const Header = () =>
-{
+import Menu from '../Menu'
+
+const Header = () => {
   return (
-    <h1>Header</h1>
+    <>
+      <header class={style.header}>
+        <Menu />
+        <img src={config.heroBackgroundUrl} class={style.header__img} />
+        <h1 class={style.header__title}>{config.heroTitle}</h1>
+      </header>
+    </>
   )
 }
 

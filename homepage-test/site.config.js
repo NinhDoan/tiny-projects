@@ -3,7 +3,7 @@ export const config = {
   tagline: 'A sample test',
   url: '#',
   heroTitle: 'happypoints',
-  heroBackgroundUrl: '',
+  heroBackgroundUrl: '../../assets/photos/anh-header.png',
 
   headerMenu: [
     { label: 'new arrivals', link: '#' },
@@ -19,7 +19,7 @@ export const config = {
     { label: 'internatinal', link: '#' },
     { label: 'contacts', link: '#' },
   ],
-  gallery: [
+  services: [
     { src: '#', label: 'anh-1' },
     { src: '#', label: 'anh-2' },
     { src: '#', label: 'anh-3' },
