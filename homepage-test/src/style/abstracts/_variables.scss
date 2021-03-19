@@ -1,0 +1,18 @@
+:root {
+  /* Colors */
+
+  --color-primary: #000000;
+
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* Typography. */
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+
+  --font-weight-base: var(--font-weight-normal);
+  --line-height-base: 1.65;
+}
