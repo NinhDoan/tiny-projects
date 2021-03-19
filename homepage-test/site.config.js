@@ -27,6 +27,13 @@ export const config = {
     { src: '#', label: 'anh-4' },
     { src: '#', label: 'anh-5' },
   ],
+  socialIcons: [
+    { src: '#', label: 'facebook', link: '#' },
+    { src: '#', label: 'twitter', link: '#' },
+    { src: '#', label: 'pinterest', link: '#' },
+    { src: '#', label: 'instagram', link: '#' },
+    { src: '#', label: 'google plus', link: '#' },
+  ],
   footer: [
     { label: 'company info', link: '#' },
     { label: 'privacy policy (updated 2017)', link: '#' },
