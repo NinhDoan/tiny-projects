@@ -1,6 +1,6 @@
 # homepage-test
 
-Live: 
+Live: https://homepage-test-xi.vercel.app/
 
 ## CLI Commands
 
