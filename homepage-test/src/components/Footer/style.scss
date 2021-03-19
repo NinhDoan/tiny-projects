@@ -1,7 +1,27 @@
 .footer {
-  
+  padding-bottom: 1.5rem;
   &__list {
     display:flex;
     justify-content:center;
+    text-transform: capitalize;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 0.75rem;
+  }
+
+  &__items:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__items:not(:last-child):after {
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 1px;
+    height: 80%;
+    width: 1px;
+    margin-left: 5px;
+    background-color: var(--color-black);
   }
 }

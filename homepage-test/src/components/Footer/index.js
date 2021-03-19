@@ -13,7 +13,7 @@ const Footer = () =>
             {config.footer.map((link) =>
             {
               return (
-                <li key={link.label}>
+                <li key={link.label} class={style.footer__items}>
                   <a href={link.link}>{ link.label}</a>
                 </li>
               )
