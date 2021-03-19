@@ -1,18 +1,27 @@
 .navigation {
-position: absolute;
-top: 10rem;
-left: 3rem;
+  position: absolute;
+  top: 10rem;
+  left: 3rem;
 
-font-size: 1rem;
-text-transform: uppercase;
-letter-spacing: 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
 
-&__list {
-list-style: none;
+  &__list {
+    list-style: none;
+  }
+
+  &__items:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }
 
-&__items:not(:last-child) {
-  margin-bottom: 3rem;
-}
+    @media only screen and (max-width: 61.25em) {
+.navigation {
+  top: 20rem;
 
+  &__items:not(:last-child) {
+    margin-bottom:1rem;
+  }
 }
+ } // 980px / 16px = 61.25em
