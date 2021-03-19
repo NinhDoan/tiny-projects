@@ -1,9 +1,25 @@
 import { h } from 'preact'
+import style from './style.scss'
+
+import {config} from '../../../site.config'
 
 const Sub = () =>
 {
   return (
-    <h1>Sub</h1>
+    <>
+      <div class={style.main}>
+        <h2 class={style.main__title}>tag your photos with #HAPPYPOINTS and #HAMSA TECHNOLOGIES</h2>
+        <ul class={style.main__list}>
+          {config.services.map((photo) => {
+            return (
+              <li class={style.main__items}>
+                <img class={style.main__photo} src={photo.src} />
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+    </>
   )
 }
 

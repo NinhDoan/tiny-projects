@@ -12,6 +12,10 @@ export const config = {
     { label: 'heels', link: '#' },
     { label: 'sandals', link: '#' },
   ],
+  mainSection: [
+    { src: '../../assets/photos/sub-photo-1.png', label: 'main-photo-1' },
+    { src: '../../assets/photos/sub-photo-2.png', label: 'main-photo-2' },
+  ],
   customerCare: [
     { label: 'ordering & payment', link: '#' },
     { label: 'shipping & tracking', link: '#' },
@@ -20,12 +24,11 @@ export const config = {
     { label: 'contacts', link: '#' },
   ],
   services: [
-    { src: '#', label: 'anh-1' },
-    { src: '#', label: 'anh-2' },
-    { src: '#', label: 'anh-3' },
-    { src: '#', label: 'anh-4' },
-    { src: '#', label: 'anh-4' },
-    { src: '#', label: 'anh-5' },
+    { src: '../../assets/photos/gallery-photo-1.png', label: 'anh-1' },
+    { src: '../../assets/photos/gallery-photo-2.png', label: 'anh-2' },
+    { src: '../../assets/photos/gallery-photo-3.png', label: 'anh-3' },
+    { src: '../../assets/photos/gallery-photo-4.png', label: 'anh-4' },
+    { src: '../../assets/photos/gallery-photo-5.png', label: 'anh-4' },
   ],
   socialIcons: [
     { src: '#', label: 'facebook', link: '#' },

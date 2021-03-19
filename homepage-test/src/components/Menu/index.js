@@ -8,11 +8,11 @@ const Menu = () =>
   return (
     <>
       <nav class={style.navigation}>
-        <ul>
+        <ul class={style.navigation__list}>
           {config.headerMenu.map((menu) =>
           {
             return (
-              <li key={menu.label}>
+              <li key={menu.label} class={style.navigation__items}>
                 <a href={menu.link} target="_blank rel='noopener noreferrer">
                   {menu.label}
                 </a>
