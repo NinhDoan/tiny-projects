@@ -16,12 +16,13 @@
   }
 }
 
-    @media only screen and (max-width: 61.25em) {
-.navigation {
-  top: 20rem;
+@media only screen and (max-width: 61.25em) {
+  .navigation {
+    top: 1rem;
+    left: 2rem;
 
-  &__items:not(:last-child) {
-    margin-bottom:1rem;
+    &__items:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
   }
-}
- } // 980px / 16px = 61.25em
+} // 980px / 16px = 61.25em

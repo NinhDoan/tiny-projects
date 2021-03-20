@@ -1,14 +1,12 @@
 import { h } from 'preact'
-import {useState} from 'preact/hooks'
 import style from './style.scss'
 import { config } from '../../../site.config'
 
 const Main = () => {
 
-  const [menu, setMenu] = useState(false)
   return (
     <>
-      <div class={style.main}>
+      <div class={`style.main`}>
         <ul class={style.main__list}>
           {config.mainSection.map((photo) =>
           {

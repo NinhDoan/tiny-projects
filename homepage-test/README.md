@@ -2,6 +2,10 @@
 
 Live: https://homepage-test-xi.vercel.app/
 
+## To-Do 
+
+- Fix aspect ratio main section when on mobile screen
+
 ## CLI Commands
 
 ``` bash
