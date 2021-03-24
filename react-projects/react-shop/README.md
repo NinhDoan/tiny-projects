@@ -3,7 +3,8 @@
 Live: https://react-shop-gold.vercel.app/
 
 ## Vue Shop
-A version of react shop but powered by vuejs
+A version of react shop but powered by vuejs (in progress)
+
 Repo: https://git.io/JYfdQ
 
 ## Stack
