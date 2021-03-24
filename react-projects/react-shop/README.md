@@ -2,6 +2,10 @@
 
 Live: https://react-shop-gold.vercel.app/
 
+## Vue Shop
+A version of react shop but powered by vuejs
+Repo: https://git.io/JYfdQ
+
 ## Stack
 
 - React: hooks, reducer pattern, context
